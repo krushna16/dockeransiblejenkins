@@ -22,7 +22,7 @@
     - name: Start the container
       docker_container:
         name: myapp
-        image: "krushna16/myapp:{DOCKER_TAG}"
+        image: "krushna16/myapp:{{DOCKER_TAG}}"
         state: started
         published_ports:
           - 0.0.0.0:9090:9090
